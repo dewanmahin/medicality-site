@@ -2,11 +2,21 @@ import { faEnvelopeOpen, faLock, faUser } from '@fortawesome/free-solid-svg-icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import googleLogo from '../../images/google.png'
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
-    const { handleNameChange, handleEmailChnage, handlePassChnage, handleRegister, error } = useAuth();
+    const { handleNameChange, handleEmailChnage, handlePassChnage, handleRegister, logInUsingGoogle, error } = useAuth();
+    const location = useLocation();
+    const history = useHistory()
+    const redirect_uri = location.state?.from || '/home'
+
+    const handleGglLogin = () => {
+        logInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri)
+            })
+    }
 
     return (
         <div>
@@ -30,7 +40,7 @@ const Register = () => {
                             </div>
                             <input type="submit" className="btn mt-4 auth-button" value="Register" />
                             <div className='or'>----------------- OR -----------------</div>
-                            <div className='googleBtn d-flex align-items-center justify-content-between' style={{width: '235px'}}><span className="gBtn"><img src={googleLogo} alt="" /></span> <span>Register with Google</span></div>
+                            <div onClick={handleGglLogin} className='googleBtn d-flex align-items-center justify-content-between' style={{width: '235px'}}><span className="gBtn"><img src={googleLogo} alt="" /></span> <span>Register with Google</span></div>
                         </form>
                         <p className='toggleText mt-4'>Already have an account? <Link to="/login">Login</Link></p>
                     </div>

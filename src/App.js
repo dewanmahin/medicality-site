@@ -8,7 +8,9 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import AuthProvider from './Context/AuthProvider';
 
 function App() {
@@ -52,6 +54,11 @@ function App() {
                 <Register></Register>
               <Footer></Footer>
             </Route>
+            <PrivateRoute path='/servicedtl/:id'>
+              <Header></Header>
+                <ServiceDetail></ServiceDetail>
+              <Footer></Footer>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

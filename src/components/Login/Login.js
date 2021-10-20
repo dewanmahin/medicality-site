@@ -1,13 +1,54 @@
 import { faEnvelopeOpen, faLock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import googleLogo from '../../images/google.png'
 import './Login.css'
 
 const Login = () => {
-    const { handleEmailChnage, handlePassChnage, handleLogin, error } = useAuth();
+    const [email, setEmail] = useState('');
+    const [pass, setpass] = useState('');
+    const [error, setError] = useState('');
+    const { logInUsingGoogle, logInUsingEmail } = useAuth();
+    const location = useLocation();
+    const history = useHistory()
+    const redirect_uri = location.state?.from || '/home'
+
+    const handleEmailChnage = e => {
+        setEmail(e.target.value)
+    }
+    const handlePassChnage = e => {
+        setpass(e.target.value)
+    }
+
+    const handleGglLogin = () => {
+        logInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri)
+            })
+    }
+
+    const handleLogin = e => {
+        e.preventDefault();
+        if(pass.length < 6){
+            setError('Password should be at least 6 characters.');
+            return;
+        }if(!/(?=.*[A-Z].*[A-Z])/.test(pass)){
+            setError('Password should contain 2 upper case');
+            return;
+        }
+
+        logInUsingEmail(email, pass)
+            .then((result) => {
+                // console.log(result.user)
+                setError('')
+                history.push(redirect_uri)
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+    }
 
     return (
         <div className="form-box">
@@ -26,7 +67,7 @@ const Login = () => {
                         </div>
                         <input type="submit" className="btn mt-4 auth-button" value="Login" />
                         <div className='or'>----------------- OR -----------------</div>
-                        <div className='googleBtn d-flex align-items-center justify-content-between'><span className="gBtn"><img src={googleLogo} alt="" /></span> <span>Login with Google</span></div>
+                        <div onClick={handleGglLogin} className='googleBtn d-flex align-items-center justify-content-between'><span className="gBtn"><img src={googleLogo} alt="" /></span> <span>Login with Google</span></div>
                     </form>
                     <p className='toggleText mt-4'>Don't have an account? <Link to="/register">Register</Link></p>
                 </div>

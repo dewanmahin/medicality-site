@@ -34,9 +34,7 @@
 .banner .auth-button:hover {
     color: black;
     border: 1px solid #1653B9;
-    background: rgba(255, 255, 255, 0.075);
-}
-.banner-img{
+    background: #ffffff13;
 }
 .banner-img img{
     width: 100%;

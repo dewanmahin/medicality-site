@@ -1,0 +1,21 @@
+.services{
+    padding: 100px 0;
+    background-image: url(../../images/services-bg.png);
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: .5px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.title span{
+    color: #164DB7;
+}
+.servies-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}

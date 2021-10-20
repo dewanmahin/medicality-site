@@ -1,23 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import Appointment from '../Appointment/Appointment';
 import Banner from '../Banner/Banner';
+import Blog from '../Blog/Blog';
 import Services from '../Services/Services';
 import './Home.css'
 
 const Home = () => {
-    const [services, setServices] = useState([]);
-
-    useEffect(() => {
-        fetch('./services.json')
-            .then(res => res.json())
-            .then(data => setServices(data))
-    }, [])
+    
 
     return (
         <div>
             <Banner></Banner>
-            {
-                <Services services={services}></Services>
-            }
+            <Services></Services>
+            <Blog></Blog>
+            <Appointment></Appointment>
         </div>
     );
 };

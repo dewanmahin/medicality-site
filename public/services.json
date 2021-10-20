@@ -1,38 +1,38 @@
 [
     {
-        "_id": "616fd0b6580cd3a4eb904261",
+        "id": "616fd0b6580cd3a4eb904261",
         "picture": "https://news.sanfordhealth.org/wp-content/uploads/2017/12/455237505-780x537.jpg",
         "name": "Cardiology Department",
-        "desc": "Introduction. Cardiology is the study heart conditions. The Consultant with whom you have an appointment is a specialist."
+        "desc": "Cardiology is a branch of internal medicine. A cardiologist is not the same as a cardiac surgeon. A cardiac surgeon opens the chest and performs heart surgery. A cardiologist specializes in diagnosing and treating diseases of the cardiovascular system. The cardiologist will carry out tests, and they may perform some procedures, such as heart catheterizations, angioplasty, or inserting a pacemaker. Heart disease relates specifically to the heart, while cardiovascular disease affects the heart, the blood vessels, or both."
     },
     {
-        "_id": "616fd0b61963c97150be4f59",
+        "id": "616fd0b61963c97150be4f59",
         "picture": "https://www.sharda.ac.in/blog/wp-content/uploads/2017/11/What-is-Neurology-and-how-to-Build-Career.jpg",
         "name": "Neurology Department",
-        "desc": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions:"
+        "desc": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions. A doctor who specializes in neurology is called a neurologist. The neurologist treats disorders that affect the brain, spinal cord, and nerves, such as. Neurologists do not perform surgery. If one of their patients requires surgery, they refer them to a neurosurgeon."
     },
     {
-        "_id": "616fd0b649e2d82acab249ba",
+        "id": "616fd0b649e2d82acab249ba",
         "picture": "https://cdn-prod.medicalnewstoday.com/content/images/articles/286/286276/urologist.jpg",
         "name": "Urology Department",
-        "desc": "Urology is a part of health care that deals with diseases of the male and female urinary tract (kidneys, ureters, bladder and urethra). It also deals with the male organs that are able to make babies (penis, testes, scrotum, prostate, etc.). Since health problems in these body parts can happen to everyone, urologic health is important."
+        "desc": "Urology is a part of health care that deals with diseases of the male and female urinary tract (kidneys, ureters, bladder and urethra). It also deals with the male organs that are able to make babies (penis, testes, scrotum, prostate, etc.). Since health problems in these body parts can happen to everyone, urologic health is important. Urology is known as a surgical specialty. Besides surgery, a urologist is a doctor with wisdom of internal medicine, pediatrics, gynecology and other parts of health care."
     },
     {
-        "_id": "616fd0b61869e14ffaa75b6b",
+        "id": "616fd0b61869e14ffaa75b6b",
         "picture": "https://7dmc.ae/wp-content/uploads/2020/08/banner-Gynecology-Clinic2.jpg",
         "name": "Gynecological",
-        "desc": "A gynecologist is a doctor who specializes in female reproductive health. They diagnose and treat issues related to the female reproductive tract. This includes the uterus, fallopian tubes, and ovaries and breasts."
+        "desc": "Gynecologists give reproductive and sexual health services that include pelvic exams, Pap tests, cancer screenings, and testing and treatment for vaginal infections. They diagnose and treat reproductive system disorders such as endometriosis, infertility, ovarian cysts, and pelvic pain. They may also care for people with ovarian, cervical, and other reproductive cancers. Some gynecologists also practice as obstetricians, who give care during pregnancy and birth. If a gynecologist has expertise in obstetrics, they’re called an OB-GYN."
     },
     {
-        "_id": "616fd0b68a1c2f39ee130e79",
+        "id": "616fd0b68a1c2f39ee130e79",
         "picture": "https://www.hackensackmeridianhealth.org/wp-content/uploads/2020/04/iStock-508509000.jpg",
         "name": "Pediatrics",
-        "desc": "Pediatrics is the branch of medicine dealing with the health and medical care of infants, children, and adolescents from birth up to the age of 18. The word “paediatrics” means “healer of children”; they are derived from two Greek words: (pais = child) and (iatros = doctor or healer)."
+        "desc": "Pediatrics is the branch of medicine dealing with the health and medical care of infants, children, and adolescents from birth up to the age of 18. The word “paediatrics” means “healer of children”; they are derived from two Greek words: (pais = child) and (iatros = doctor or healer). Paediatrics is a relatively new medical specialty, developing only in the mid-19th century. Abraham Jacobi (1830–1919) is known as the father of paediatrics. A paediatrician is a child's physician who provides not only medical care for children."
     },
     {
-        "_id": "616fd0b6f4433184c07f29ba",
+        "id": "616fd0b6f4433184c07f29ba",
         "picture": "https://www.neovisioneyecenters.com/wp-content/uploads/2020/10/neovision-october-2020-1.jpg",
-        "name": "OPHTHALMOLOGIST",
-        "desc": "An ophthalmologist — Eye M.D. — is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat. As a medical doctor who has completed college and at least eight years of additional medical training, an ophthalmologist is licensed to practice medicine and surgery. "
+        "name": "Ophthalmologist",
+        "desc": "An ophthalmologist — Eye M.D. — is a medical or osteopathic doctor who specializes in eye and vision care. Ophthalmologists differ from optometrists and opticians in their levels of training and in what they can diagnose and treat. As a medical doctor who has completed college and at least eight years of additional medical training, an ophthalmologist is licensed to practice medicine and surgery. An ophthalmologist diagnoses and treats all eye diseases, performs eye surgery and prescribes and fits eyeglasses and contact lenses to correct vision problems."
     }
 ]

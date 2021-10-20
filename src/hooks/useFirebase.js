@@ -15,8 +15,7 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
 
     const logInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(() => {})
+        return signInWithPopup(auth, googleProvider);
     }
 
     const handleNameChange = e => {
@@ -29,27 +28,8 @@ const useFirebase = () => {
         setpass(e.target.value)
     }
 
-    const handleLogin = e => {
-        e.preventDefault();
-        if(pass.length < 6){
-            setError('Password should be at least 6 characters.');
-            return;
-        }if(!/(?=.*[A-Z].*[A-Z])/.test(pass)){
-            setError('Password should contain 2 upper case');
-            return;
-        }
-
-        logInUsingEmail(email, pass);
-    }
     const logInUsingEmail = (email, pass, e) => {
-        signInWithEmailAndPassword(auth, email, pass)
-            .then((result) => {
-                console.log(result.user)
-                setError('')
-            })
-            .catch(error => {
-                setError(error.message);
-            })
+        return signInWithEmailAndPassword(auth, email, pass);
     }
 
     const handleRegister = e => {
@@ -98,10 +78,10 @@ const useFirebase = () => {
 
     return {
         logInUsingGoogle,
+        logInUsingEmail,
         handleNameChange,
         handleEmailChnage,
         handlePassChnage,
-        handleLogin,
         handleRegister,
         error,
         logOut,

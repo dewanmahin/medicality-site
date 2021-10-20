@@ -1,0 +1,26 @@
+.service img{
+    width: 350px;
+    height: 210px;
+}
+.service .card-body{
+    height: 305px;
+}
+.service .card-body .card-title{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 12px 0px;
+}
+.service .card-body .card-text{
+    font-size: 17px;
+    color: #606060;
+    margin: 10px 0 18px;
+}
+.dtl-btn{
+    color: white;
+    background: linear-gradient(90deg, #1E0B9B 0%, #11adc6 100%);
+    border: none;
+    padding: 10px 20px;
+}
+.dtl-btn:hover {
+    color: white;
+}
