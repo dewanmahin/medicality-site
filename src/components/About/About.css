@@ -1,0 +1,54 @@
+.about-dtl{
+    padding: 100px 0;
+    background-image: url(../../images/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-dtl img{
+    width: 100%;
+    padding-right: 20px;
+}
+.about-text .title{
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 26px;
+}
+.about-text p{
+    font-size: 18px;
+    color: #5c5c5c;
+    margin-bottom: 26px;
+
+}
+.about-text .auth-button {
+    margin: 0;
+}
+.about-counter{
+    padding: 80px 0;
+    background-image: url(../../images/blog-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.counter{
+    box-shadow: 0px 3px 11px 4px #0000000d;
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #ffffffa8;
+}
+.counter img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+.counter h2{
+    font-family: fantasy;
+    color: #164DB7;
+    letter-spacing: 1px;
+}
+.counter p{
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: monospace;
+    font-weight: 600;
+}
