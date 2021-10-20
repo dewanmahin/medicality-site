@@ -1,0 +1,43 @@
+.banner{
+    padding: 100px 0;
+    background-image: url(../../images/banner-bg.png);
+}
+.bannner-text{
+    padding-right: 65px;
+}
+.bannner-text h1{
+    letter-spacing: 0.094rem;
+    font-size: 60px;
+    font-family: fantasy;
+    line-height: 76px;
+}
+.bannner-text h1 span{
+    color: #164DB7;
+    font-family: monospace;
+    font-weight: bolder;
+}
+.bannner-text p{
+    color: #494949;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: .5px;
+    margin: 25px 0px 22px;
+    line-height: 30px;
+}
+.sig-img{
+    width: 130px;
+}
+.banner .auth-button {
+    margin: 0px 0px 0px 50px;
+    transition: 1s;
+}
+.banner .auth-button:hover {
+    color: black;
+    border: 1px solid #1653B9;
+    background: rgba(255, 255, 255, 0.075);
+}
+.banner-img{
+}
+.banner-img img{
+    width: 100%;
+}
