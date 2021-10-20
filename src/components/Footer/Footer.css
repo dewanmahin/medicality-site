@@ -1,0 +1,10 @@
+.footer{
+    background: #1554BA;
+    color: white;
+    padding: 15px 0;
+}
+.brd{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    margin: 0px 20px;
+}

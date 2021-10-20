@@ -1,0 +1,49 @@
+.sub-header{
+    background: linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%);
+    color: white;
+    padding: 6px 0;
+}
+.userName{
+    margin-right: 12px;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    font-family: cursive;
+}
+.auth-btn{
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    transition: 0.3s;
+    padding: 5px .75rem;
+}
+.auth-btn:hover{
+    background-color: white;
+    color: black;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: rgba(0,0,0,.1);
+    margin-left: 184px;
+}
+.main-header{
+    padding: 10px 0;
+}
+.logo{
+    color: #174BB6;
+    font-size: 34px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+.nav-link{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: monospace;
+    letter-spacing: .5px;
+}
+.divider{
+    height: 3px;
+    background: linear-gradient(18deg,#2dcaf1,#1E0B9B);
+}

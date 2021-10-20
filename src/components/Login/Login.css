@@ -1,0 +1,74 @@
+.form-box{
+    margin: 100px 0;
+}
+.form {
+    background: #fcfafa;
+    padding: 90px 100px;
+    width: 65%;
+    margin: auto;
+    box-shadow: 0px 1px 7px 1px #00000014;
+    border-radius: 8px;
+}
+.form h2{
+    font-size: 40px;
+    font-family: inherit;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.auth-button{
+    margin: auto;
+    width: 180px;
+    display: block;
+    padding: 12px 8px;
+    border: none;
+    color: white;
+    background: linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%);
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    box-shadow: 0px 2px 10px 2px #0000003b;
+}
+.auth-button:hover{
+    color: white;
+    box-shadow: none;
+}
+.or{
+    text-align: center;
+    padding: 34px 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: monospace;
+}
+.googleBtn{
+    width: 215px;
+    height: 50px;
+    border: 2px solid #e8e8e8;
+    margin: auto;
+    padding: 8px 8px 8px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.gBtn{
+    background-color: gainsboro;
+    padding: 4px 0;
+}
+.googleBtn img{
+    width: 40px;
+    height: 40px;
+}
+.toggleText{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.toggleText a{
+    color: #3e5eff;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
